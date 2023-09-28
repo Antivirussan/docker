@@ -6,10 +6,11 @@ services:
   mongo:
     image: mongo
     restart: always
-       ports:
+    ports:
       - 27017:27017
     volumes:
       -/var/lib/mongo:/data/db
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: toor
+      MONGO_INITDB_DATABASE: diacov
