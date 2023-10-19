@@ -9,7 +9,7 @@ services:
     ports:
       - 27017:27017
     volumes:
-      -/var/lib/mongo:/data/db
+      - /var/lib/mongo:/data/db
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: toor
